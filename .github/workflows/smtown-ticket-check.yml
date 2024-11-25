@@ -1,0 +1,175 @@
+name: SMTOWN 티켓 예매 확인 - 구역별
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # 5분마다 실행
+
+jobs:
+  check_ticket_F2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F2 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2165' # F2 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F2 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F5:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F5 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2171' # F5 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F5 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F6:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F6 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2172' # F6 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F6 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F10:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F10 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2183' # F10 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F10 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F11:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F11 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2184' # F11 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F11 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F12:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F12 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2185' # F12 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F12 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F16:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F16 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2169' # F16 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F16 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F19:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F19 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2175' # F19 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F19 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F20:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F20 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2176' # F20 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F20 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F22:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F22 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2182' # F22 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F22 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F23:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F23 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2186' # F23 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F23 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F24:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F24 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2187' # F24 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F24 구역 티켓 예매 가능합니다!'
+
+  check_ticket_F25:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: F25 구역 티켓 확인
+        uses: mooyoul/melon-ticket-actions@v1.1.0
+        with:
+          product-id: '210649'
+          schedule-id: '4664'
+          seat-id: '2188' # F25 구역 좌석 ID
+          slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          message: 'F25 구역 티켓 예매 가능합니다!'
